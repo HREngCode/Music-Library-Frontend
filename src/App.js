@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import DisplaySongs from './components/DisplaySong/DisplaySong';
 import AddSong from './components/AddSong/AddSong';
+import SearchBar from './components/SearchBar/SearchBar';
 
 function App() {
 
@@ -24,13 +25,12 @@ function App() {
   }
 
   return (
-    <div>
       <div>
+        <SearchBar songs={songs} setSongs={setSongs}/>
         <DisplaySongs songs={songs} getAllSongs={getAllSongs}/>
         <AddSong getAllSongs={getAllSongs}/>
         {/* <button onClick={() => getAllSongs()}>Get All Songs</button> */}
       </div>
-  `</div>
   );
 }
 
