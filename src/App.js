@@ -23,47 +23,14 @@ function App() {
     setSongs(response.data)
   }
 
-  // async function getSongByName(){
-  //   const response = await axios.get('http://127.0.0.1:8000/api/music/');
-  //   console.log(response.data);
-  //   setSongs(response.data)
-  // }
-
-  // async function createSong(){
-  //   const response = await axios.post('http://127.0.0.1:8000/api/music/');
-  //   console.log(response.data);
-  //   setSongs(response.data)
-  // }
-
-  // async function updateSong(){
-  //   const response = await axios.get('http://127.0.0.1:8000/api/music/');
-  //   console.log(response.data);
-  //   setSongs(response.data)
-  // }
-
-  // async function deleteSong(){
-  //   const response = await axios.delete('http://127.0.0.1:8000/api/music/');
-  //   console.log(response.data);
-  //   setSongs(response.data)
-  // }
-
   return (
     <div>
       <div>
-        <DisplaySongs songs={songs}/>
+        <DisplaySongs songs={songs} getAllSongs={getAllSongs}/>
         <AddSong getAllSongs={getAllSongs}/>
         {/* <button onClick={() => getAllSongs()}>Get All Songs</button> */}
       </div>
-      {/* <div>
-        <button onClick={() => getSongByName()}>Get Song By Name</button>
-      </div>
-      <div>
-        <button onClick={() => updateSong()}>Update Song</button>
-      </div>
-      <div>
-        <button onClick={() => deleteSong()}>Delete Song</button>
-      </div> */}
-    </div>
+  `</div>
   );
 }
 
