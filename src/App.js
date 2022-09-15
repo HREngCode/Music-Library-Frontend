@@ -34,7 +34,7 @@ function App() {
         <div>
           <DisplaySongs songs={songs} getAllSongs={getAllSongs}/>
         </div>
-        <div>
+        <div className='container'>
         </div>      
       </div>
   );
