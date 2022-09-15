@@ -6,10 +6,10 @@ import DeleteButton from "../DeleteButton/DeleteButton";
 const DisplaySong = (props) => {
     return ( 
         <div>
-            <table>
+            <table >
                 <thead>
                     <tr>
-                        <th>Title</th>
+                       <th>Title</th>
                         <th>Artist</th>
                         <th>Album</th>
                         <th>Release Date</th>

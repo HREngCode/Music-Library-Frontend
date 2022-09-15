@@ -3,6 +3,7 @@ import axios from 'axios';
 import DisplaySongs from './components/DisplaySong/DisplaySong';
 import AddSong from './components/AddSong/AddSong';
 import SearchBar from './components/SearchBar/SearchBar';
+import './App.css'
 
 function App() {
 
@@ -11,11 +12,6 @@ function App() {
   // uses useEffect when page gets rendered. Any time we want our table to update, we need to use this.
   useEffect(() => {
     getAllSongs();
-    // getSongByName();
-    // createSong();
-    // updateSong();
-    // deleteSong();
-    // console.log('Hello World')
   }, []); //used when comoponent is first mounted
 
   async function getAllSongs(){
@@ -26,10 +22,20 @@ function App() {
 
   return (
       <div>
-        <SearchBar songs={songs} setSongs={setSongs}/>
-        <DisplaySongs songs={songs} getAllSongs={getAllSongs}/>
-        <AddSong getAllSongs={getAllSongs}/>
-        {/* <button onClick={() => getAllSongs()}>Get All Songs</button> */}
+        <div>
+          <h2>MY MUSIC</h2>
+        </div>
+        <div className='searchBar'>
+          <SearchBar songs={songs} setSongs={setSongs}/>
+        </div>
+        <div>
+          <AddSong getAllSongs={getAllSongs}/>
+        </div> 
+        <div>
+          <DisplaySongs songs={songs} getAllSongs={getAllSongs}/>
+        </div>
+        <div>
+        </div>      
       </div>
   );
 }

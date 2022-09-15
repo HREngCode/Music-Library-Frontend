@@ -1,0 +1,59 @@
+.searchBar{
+    border-style: solid;
+    border-radius: 12px;
+    text-align: center;
+    padding: 1em;
+    background-color: rgba(165, 42, 42, 0.656);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.addData{
+    float: right;
+    border-style: solid;
+    padding: 1em;
+    margin-right: 1em;
+    margin-top: .65em;
+}
+
+.container{
+    height: 500px;
+    width:auto;
+    background-image: url('assets/Records.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.addSongButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5em;
+}
+
+table,th, td {
+    border: 1px solid;
+}
+table {
+    align-items: center;
+}
+
+th{
+    text-align: left;
+    background-color: coral;
+}
+
+td{
+    background-color:grey ;
+}
+
+.newEntry {
+    text-align: right;
+    margin-right: 12px;
+    padding: .125em;
+}
+h2 {
+    text-align: center;
+}

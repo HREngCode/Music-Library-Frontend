@@ -30,18 +30,30 @@ function handleSubmit(event){
 
     return ( 
         <div>
-            <form onSubmit={handleSubmit}>
-                <label>Title</label>
+            <form className='addData' onSubmit={handleSubmit}>
+                <div className='newEntry'>
+                <label>Title: </label>
                 <input value={title} onChange={(event) => setTitle(event.target.value)}/>
-                <label>Artist</label>
+                </div>
+                <div className='newEntry'>
+                <label>Artist: </label>
                 <input value={artist} onChange={(event) => setArtist(event.target.value)}/>
-                <label>Album</label>
+                </div>
+                <div className='newEntry'>
+                <label>Album: </label>
                 <input value={album} onChange={(event) => setAlbum(event.target.value)}/>
-                <label>Release Date</label>
-                <input type="date" value={releaseDate} onChange={(event) => setReleaseDate(event.target.value)}/>
-                <label>Genre</label>
+                </div>
+                <div className='newEntry'>
+                <label>Genre: </label>
                 <input value={genre} onChange={(event) => setGenre(event.target.value)}/>
+                </div>
+                <div className='newEntry'>
+                <label>Release Date: </label>
+                <input type="date" value={releaseDate} onChange={(event) => setReleaseDate(event.target.value)}/>
+                </div>
+                <div className='addSongButton' >
                 <button type='submit'>Submit</button>
+                </div>
             </form>
         </div>
      );

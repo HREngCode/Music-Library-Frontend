@@ -10,5 +10,5 @@ const DeleteButton = ({id, getAllSongs}) => {
         <button onClick={deleteSong}>Delete Song</button>
      );
 }
- 
+// Do research on a modal.
 export default DeleteButton;
